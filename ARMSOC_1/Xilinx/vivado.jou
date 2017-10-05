@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 22 22:37:39 2017
+# Process ID: 2320
+# Current directory: C:/Users/Mary/Documents/RISCME-master/ARMSOC_1/Xilinx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10880 C:\Users\Mary\Documents\RISCME-master\ARMSOC_1\Xilinx\ARMSOC_1.xpr
+# Log file: C:/Users/Mary/Documents/RISCME-master/ARMSOC_1/Xilinx/vivado.log
+# Journal file: C:/Users/Mary/Documents/RISCME-master/ARMSOC_1/Xilinx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Mary/Documents/RISCME-master/ARMSOC_1/Xilinx/ARMSOC_1.xpr
+report_ip_status -name ip_status 
+set_property part xc7z010clg400-1 [current_project]
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_run impl_2
+synth_design -rtl -name rtl_1
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+refresh_design

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1506741255">
+  <File Type="RDS-PROPCONSTRS" Name="AHBLITE_SYS_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="AHBLITE_SYS.tcl"/>
+  <File Type="RDS-RDS" Name="AHBLITE_SYS.vds"/>
+  <File Type="RDS-UTIL" Name="AHBLITE_SYS_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AHBLITE_SYS_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AHBLITE_SYS.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AHBLITE_SYS_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AHBLITE_SYS_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/ClockDiv_2/ClockDiv.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../ARMSOC_1.srcs/sources_1/ip/ClockDiv_2/ClockDiv.xci"/>
+        <Attr Name="ImportTime" Val="1496774379"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARMSOC_1/AHBLITE_SYS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../AHBLITE_SYS.v"/>
+        <Attr Name="ImportTime" Val="1496668430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARMSOC_1/arm_single.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../arm_single.sv"/>
+        <Attr Name="ImportTime" Val="1496768406"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARMSOC_1/Software/imem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Software/imem.sv"/>
+        <Attr Name="ImportTime" Val="1496955837"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <File Path="$PSRCDIR/sources_1/imports/Software/ahbrom.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Software/ahbrom.sv"/>
+        <Attr Name="ImportTime" Val="1498694457"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AHBLITE_SYS"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../ZYBO-master/Resources/XDC/ZYBO_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../ZYBO-master/Resources/XDC/ZYBO_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

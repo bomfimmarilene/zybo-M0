@@ -1,0 +1,79 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Sep 30 00:15:56 2017
+| Host         : DESKTOP-HLT9O59 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AHBLITE_SYS_control_sets_placed.rpt
+| Design       : AHBLITE_SYS
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |     4 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            8 |
+| No           | No                    | Yes                    |             104 |           31 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             288 |          160 |
+| Yes          | No                    | Yes                    |             176 |           55 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+----------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |              Enable Signal             | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+----------------------------------------+------------------+------------------+----------------+
+|  instance_name/inst/clk_out1 |                                        |                  |                8 |             12 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/E[0]                   | RESETn_IBUF      |                6 |             16 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[1][31][0]      |                  |               21 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[2][31][0]      |                  |               18 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[3][31][0]      |                  |               15 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[4][31][0]      |                  |               16 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[5][31][0]      |                  |               15 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[6][31][0]      |                  |               19 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[7][31][0]      |                  |               17 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/rf_reg[0][31][0]      |                  |               22 |             32 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/gpio                   | RESETn_IBUF      |               11 |             32 |
+|  instance_name/inst/clk_out1 | dut/arm/dp/pcreg/E[0]                  |                  |               17 |             32 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/timers_reg[6][31][0]   | RESETn_IBUF      |               10 |             32 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/timers_reg[3][31]_0[0] | RESETn_IBUF      |                9 |             32 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/timers_reg[4][31][0]   | RESETn_IBUF      |               10 |             32 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/timers_reg[5][31][0]   | RESETn_IBUF      |                9 |             32 |
+|  instance_name/inst/clk_out1 |                                        | RESETn_IBUF      |               31 |            104 |
+|  instance_name/inst/clk_out1 | dut/dmem/adrreg/rf_reg[1][0]           |                  |               32 |            128 |
++------------------------------+----------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 12     |                     1 |
+| 16+    |                    17 |
++--------+-----------------------+
+
+
