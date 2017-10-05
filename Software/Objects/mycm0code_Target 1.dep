@@ -1,0 +1,2 @@
+Dependencies for Project 'mycm0code', Target 'Target 1': (DO NOT MODIFY !)
+F (.\blinkriscme.s)(0x59CF0BF7)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\CMSIS\Include-IDevice\CMSDK_CM0\Include--pd "__UVISION_VERSION SETA 524"--list .\listings\blinkriscme.lst --xref -o .\objects\blinkriscme.o --depend .\objects\blinkriscme.d)
